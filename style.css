@@ -14,7 +14,7 @@ h1 {
 #countdown {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;
+    margin: 20px 40px 0px 40px;
     color: #2ecc71;
     border: 5px solid #3498db;
     padding: 10px;
