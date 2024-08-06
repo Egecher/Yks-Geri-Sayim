@@ -4,57 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YKS Geri Sayım</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #2c3e50; /* Sayfa arka plan rengi */
-            color: #ecf0f1; /* Sayfa metin rengi */
-        }
-
-        h1 {
-            color: #3498db;
-        }
-
-        #countdown {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            color: #2ecc71;
-            border: 5px solid #3498db; /* Çerçeve kalınlığı ve rengi */
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #34495e; /* Geri sayım kutusu arka plan rengi */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>YKS Geri Sayım</h1>
     <div id="countdown"></div>
 
-    <script>
-        const examDate = new Date('2024-06-08T10:00:00');
-
-        function updateCountdown() {
-            const currentDate = new Date();
-            const timeDifference = examDate - currentDate;
-
-            if (timeDifference > 0) {
-                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-                document.getElementById('countdown').innerHTML = `${days} gün, ${hours} saat, ${minutes} dakika, ${seconds} saniye kaldı.`;
-            } else {
-                document.getElementById('countdown').innerHTML = "Sınav başladı!";
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
