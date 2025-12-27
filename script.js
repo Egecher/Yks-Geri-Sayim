@@ -1,4 +1,4 @@
-const examDate = new Date('2025-06-14T10:00:00');
+const examDate = new Date('2026-06-20T10:00:00');
 
 function updateCountdown() {
     const currentDate = new Date();
